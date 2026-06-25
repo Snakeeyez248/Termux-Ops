@@ -1,0 +1,44 @@
+show_dashboard() {
+
+source "$HOME/.config/termux-ops/device.conf"
+
+source "$HOME/.config/termux-ops/profile.conf"
+
+BATTERY="$(termux-battery-status 2>/dev/null | jq -r '.percentage' 2>/dev/null)"
+
+MEMORY="$(free -h | awk '/Mem:/ {print $3 " / " $2}')"
+
+echo
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "      TERMUX-OPS"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo
+
+echo "User      : $DISPLAY_NAME"
+
+echo "Device    : $DEVICE_MODEL"
+
+echo "Android   : $ANDROID_VERSION"
+
+if [ "$ROOT_AVAILABLE" = "yes" ]
+then
+    echo "Root      : Available"
+else
+    echo "Root      : Not Available"
+fi
+
+if [ -n "$BATTERY" ] && [ "$BATTERY" != "null" ]
+then
+    echo "Battery   : ${BATTERY}%"
+fi
+
+echo "Memory    : $MEMORY"
+
+echo
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+echo
+
+}

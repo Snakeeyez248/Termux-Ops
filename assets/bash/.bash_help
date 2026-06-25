@@ -1,0 +1,27 @@
+helpme() {
+
+echo
+
+echo "Termux-Ops Help"
+
+echo
+echo "Useful Commands"
+echo
+
+echo "opsinfo      - Device information"
+
+echo "reloadops    - Reload configuration"
+
+echo "mkcd         - Create and enter folder"
+
+echo "extract      - Extract archives"
+
+echo "updatepkg    - Update packages"
+
+echo "weather      - Weather information"
+
+echo "myip         - Public IP"
+
+echo
+
+}

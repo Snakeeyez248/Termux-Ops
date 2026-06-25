@@ -1,0 +1,11 @@
+set_prompt() {
+
+source "$HOME/.config/termux-ops/profile.conf"
+
+DEVICE_SHORT="$(source "$HOME/.config/termux-ops/device.conf" && echo "$DEVICE_MODEL")"
+
+DEVICE_SHORT="$(echo "$DEVICE_SHORT" | tr ' ' '_')"
+
+PS1="\n╭─ ${DISPLAY_NAME}@${DEVICE_SHORT}\n├─ \w\n╰─❯ "
+
+}
