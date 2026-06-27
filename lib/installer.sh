@@ -30,10 +30,6 @@ cp -f \
 
 mkdir -p \
 "$HOME/.termux-ops/modules" \
-"$HOME/.termux-ops/backups" \
-"$HOME/.termux-ops/logs" \
-"$HOME/.termux-ops/state" \
-"$HOME/.termux-ops/modules" \
 "$HOME/.termux-ops/lib" \
 "$HOME/.termux-ops/backups" \
 "$HOME/.termux-ops/logs" \

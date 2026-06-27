@@ -16,12 +16,6 @@ cp -f "$HOME/.bashrc" "$BACKUP_DIR/" 2>/dev/null
 
 cp -f "$HOME/.bash_aliases" "$BACKUP_DIR/" 2>/dev/null
 
-cp -rf "$HOME/.termux" "$BACKUP_DIR/" 2>/dev/null
-
-cp -f "$HOME/.bashrc" "$BACKUP_DIR/" 2>/dev/null
-
-cp -f "$HOME/.bash_aliases" "$BACKUP_DIR/" 2>/dev/null
-
 cp -f "$HOME/.bash_functions" "$BACKUP_DIR/" 2>/dev/null
 
 cp -f "$HOME/.bash_prompt" "$BACKUP_DIR/" 2>/dev/null
