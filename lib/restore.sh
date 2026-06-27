@@ -38,6 +38,11 @@ then
     cp -rf "$LATEST/modules" "$HOME/.termux-ops/"
 fi
 
+if [ -d "$LATEST/lib" ]
+then
+    cp -rf "$LATEST/lib" "$HOME/.termux-ops/"
+fi
+
 if [ -d "$LATEST/.termux" ]
 then
     cp -rf "$LATEST/.termux" "$HOME/"

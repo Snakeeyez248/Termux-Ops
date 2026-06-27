@@ -28,7 +28,9 @@ cp -rf "$HOME/.config/termux-ops" "$BACKUP_DIR/" 2>/dev/null
 
 cp -rf "$HOME/.termux-ops/modules" "$BACKUP_DIR/" 2>/dev/null
 
-cp -rf "$HOME/.termux" "$BACKUP_DIR/" 2>/dev/null
+cp -rf "$HOME/.termux-ops/modules" "$BACKUP_DIR/" 2>/dev/null
+
+cp -rf "$HOME/.termux-ops/lib" "$BACKUP_DIR/" 2>/dev/null
 
 msg_ok "Backup stored in"
 
